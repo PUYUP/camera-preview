@@ -181,7 +181,7 @@ public class CameraPreview extends Plugin implements CameraActivity.CameraPrevie
 
         // disable auto-focus feature
         camera.cancelAutoFocus();
-        camera.autoFocus(android.hardware.Camera.AutoFocusCallback)
+        camera.autoFocus(null);
 
         List<String> supportedFlashModes;
         supportedFlashModes = camera.getParameters().getSupportedFlashModes();
